@@ -26,11 +26,15 @@ Inside the snapshot, we have created a calendar called "Main Calendar - AI Booki
 
 Get the User ID from the "Profile Settings" in Samurai. Add the `user_id` to customer values.
 
-### Step 6: Complete Samurai AI Setup Form
+### Step 6: Complete Samurai AI Setup - Step 1
 
-Head to the form called "Samurai AI Setup" in your Highlevel account. Open the form, make sure that you have the required fields added, and click the button to complete the setup.
+Head to the form called "Samurai AI Setup - Step 1" in your Highlevel account in teh "forms" section. Open the form, make sure that you have the required fields added, and click the button to complete the setup. This part of the setup creates a workspace and the assistants in Samurai.
 
 ### Step 7: Head back over to your Samurai Account
+
+1. Head back over to your Samurai Account.
+2. Click into the workspace we have created for you.
+3. In your workspace, you'll see that we have created the basic required assistants.
 
 ### Step 8: Add the OpenAI Key
 
@@ -49,14 +53,14 @@ The OpenAI key is necessary for turning documents into embeddings. If you do not
 1. Head to the "Connections" tab.
 2. Connect your Highlevel Account.
 3. Select the "Location" and not the agency account.
-4. Copy the `connection_id` (So that we can paste it in later).
+4. Copy the `connection_id` and paste it into the customer value in Highlevel
 
-### Step 10: Add Files
+### Step 10: Complete Samurai AI Setup - Step 2
 
-1. Head back over to your Samurai Account.
-2. Click into the workspace we have created for you.
-3. In your workspace, you'll see that we have created the basic required assistants.
-4. The last step is to add files/collections of files so that the chatbot assistant is smarter:
+Head to the form called "Samurai AI Setup - Step 2" in your Highlevel account in the "forms" section. Open the form, make sure that you have the required fields added, and click the button to complete the setup. This part of the setup creates tools for the assistants to use.
+
+### Step 11: Add Files
+1. The last step is to add files/collections of files so that the chatbot assistant is smarter:
    - Head to the "Files" tab.
    - Simply add files.
    - If you get an error:
@@ -66,12 +70,11 @@ The OpenAI key is necessary for turning documents into embeddings. If you do not
        - **Good Example:** `test-FAQ.csv`
        - **Bad Example:** `test-FAQ`
 
-### Step 11: Final Steps
+### Step 12: Final Steps
 
-1. Go back to Highlevel and in the customer values section, make sure to add the required custom values:
-    - `user_id`: 
-    - `connection_id`: This is the connection_id you can copy from your Samurai account.
-    - `workspace_id`: This is the ID found in the URL browser tab when logged in to your Samurai Account.
+1. Go back to Highlevel and in the custom values section, make sure to add the required custom values:
+    - `user_id`: From the "Profile Settings" tab in your Samurai account.
+    - `connection_id`: You can copy this from the "Connections" tab in your Samurai account.
     - `calendar_id`: This is from the calendar you made in Highlevel.
 
 > **Note:** If you encounter any issues or need assistance with the setup, please add <code>admin@samuraichat.com</code> as a team member to help with updates and send us an email requesting help with the setup of the Samurai account.
