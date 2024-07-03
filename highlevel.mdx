@@ -3,16 +3,16 @@ title: Highlevel CRM Snapshot
 description: 'This guide will help you set up Samurai directly from your Highlevel CRM using a snapshot'
 ---
 
-### Step 1: Create/Login to your Samurai Account 
+### Create/Login to your Samurai Account 
 [Head here to do this](http://app.samuraichat.com/login).
 
 ## Highlevel Setup
 
-### Step 2: Highlevel CRM Setup
+### Step 1: Highlevel CRM Setup
 
 1. Create a Highlevel Account [Create a Highlevel account here](https://app.gohighlevel.com/).
 
-### Step 3: Download the Snapshot
+### Step 2: Download the Snapshot
 
 Download the snapshot [here](https://affiliates.gohighlevel.com/?fp_ref=ta3vu&share=V5s38moiS0aViq5MPyNf). The snapshot will create:
    - An initial outreach sequence
@@ -20,25 +20,27 @@ Download the snapshot [here](https://affiliates.gohighlevel.com/?fp_ref=ta3vu&sh
    - An appointment setting chatbot that connects to the calendar and uses any messenger
    - A follow-up sequence
 
-### Step 4: Create a Calendar and Get Calendar ID
+### Step 3: Create a Calendar and Get Calendar ID
 
 Inside the snapshot, we have created a calendar called "Main Calendar - AI Bookings". Feel free to alter the calendar settings however you want. Add the calendar ID to the "Custom Value" for `calendar_id`.
 
-### Step 5: Add The User ID
+### Step 4: Add The User ID
 
 Get the User ID from the "Profile Settings" in Samurai. Add the `user_id` to customer values.
 
-### Step 6: Complete Samurai AI Setup - Step 1
+### Step 5: Complete Samurai AI Setup - Step 1
 
 Head to the form called "Samurai AI Setup - Step 1" in your Highlevel account in teh "forms" section. Open the form, make sure that you have the required fields added, and click the button to complete the setup. This part of the setup creates a workspace and the assistants in Samurai.
 
-### Step 7: Head back over to your Samurai Account
+## Samurai Setup
+
+### Step 1: Head back over to your Samurai Account
 
 1. Head back over to your Samurai Account.
 2. Click into the workspace we have created for you.
 3. In your workspace, you'll see that we have created the basic required assistants.
 
-### Step 8: Add the OpenAI Key
+### Step 2: Add the OpenAI Key
 
 The OpenAI key is necessary for turning documents into embeddings. If you do not want to use OpenAI for your assistants, you can specify another chat model in a separate process.
 
@@ -50,18 +52,14 @@ The OpenAI key is necessary for turning documents into embeddings. If you do not
 3. Free credits might be available for new OpenAI accounts or API keys.
 4. Avoid rate limit errors by visiting [this guide](https://platform.openai.com/docs/guides/rate-limits).
 
-### Step 9: Set Up Connections
+### Step 3: Set Up Connections
 
 1. Head to the "Connections" tab.
 2. Connect your Highlevel Account.
 3. Select the "Location" and not the agency account.
 4. Copy the `connection_id` and paste it into the customer value in Highlevel
 
-### Step 10: Complete Samurai AI Setup - Step 2
-
-Head to the form called "Samurai AI Setup - Step 2" in your Highlevel account in the "forms" section. Open the form, make sure that you have the required fields added, and click the button to complete the setup. This part of the setup creates tools for the assistants to use.
-
-### Step 11: Add Files
+### Step 4: Add Files
 1. The last step is to add files/collections of files so that the chatbot assistant is smarter:
    - Head to the "Files" tab.
    - Simply add files.
@@ -72,9 +70,15 @@ Head to the form called "Samurai AI Setup - Step 2" in your Highlevel account in
        - **Good Example:** `test-FAQ.csv`
        - **Bad Example:** `test-FAQ`
 
-### Step 12: Final Steps
+## Final Steps
 
-1. Go back to Highlevel and in the custom values section, make sure to add the required custom values:
+### Step 1: Complete Samurai AI Setup - Step 2
+
+Head to the form called "Samurai AI Setup - Step 2" in your Highlevel account in the "forms" section. Open the form, make sure that you have the required fields added, and click the button to complete the setup. This part of the setup creates tools for the assistants to use.
+
+### Step 2: Confirm Custom Values
+
+1. Go back to Highlevel and in the custom values section, and make sure you have added all of the required custom values for things to work properly:
     - `user_id`: From the "Profile Settings" tab in your Samurai account.
     - `connection_id`: You can copy this from the "Connections" tab in your Samurai account.
     - `calendar_id`: This is from the calendar you made in Highlevel.
